@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>글자색 바꾸기</title>
+</head>
+    <style>
+        body{
+            text-align: center;}
+        #heading{
+            color: blue;}
+        #text{
+            color: gray;
+            font-size: 15px;
+        }
+    </style>
+<body>
+   <h1 id="heading">자바스크립트</h1>
+    <p id="text">위 텍스트를 클릭해 보세요</p>    
+    <script >
+        var heading = document.querySelector('#heading');
+		heading.onclick = function() {
+			heading.style.color = "yellow";
+		}
+        var name = prompt("이름을 입력하세요.")
+        document.write("<b><big>" + name + "</big></b>님, 환영합니다.")
+    </script>
+</body>
+</html>
